@@ -1,0 +1,53 @@
+# Dependencias
+node_modules
+
+# Build local
+dist
+
+# Tests
+test
+*.spec.ts
+coverage
+
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Env files (nunca incluir secretos en la imagen)
+.env
+.env.*
+!.env.example
+
+# Documentación
+README.md
+CHANGELOG.md
+docs
+
+# Archivos de configuración de desarrollo
+.eslintrc*
+eslint.config.*
+.prettierrc*
+tsconfig.json
+tsconfig.build.json
+nest-cli.json
+
