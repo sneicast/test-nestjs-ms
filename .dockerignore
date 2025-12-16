@@ -43,11 +43,8 @@ README.md
 CHANGELOG.md
 docs
 
-# Archivos de configuración de desarrollo
+# Archivos de configuración de desarrollo (no necesarios en runtime)
 .eslintrc*
 eslint.config.*
 .prettierrc*
-tsconfig.json
-tsconfig.build.json
-nest-cli.json
 
