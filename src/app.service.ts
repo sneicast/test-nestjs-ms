@@ -1,8 +1,12 @@
 import { Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 
 @Injectable()
 export class AppService {
+  constructor(private configService: ConfigService) {}
+
   getHello(): string {
-    return 'Nueva prueba';
+    const environment = this.configService.get<string>('ENVIROMENT', 'development');
+    return `Hello from ${environment}`;
   }
 }
